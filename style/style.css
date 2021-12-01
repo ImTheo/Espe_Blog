@@ -1,0 +1,23 @@
+.media {
+    display: flex;
+    align-items: flex-start;
+    width: 88vw;
+    background-color: white;
+    border-color: black;
+    border-style: solid;
+    border-radius: 4vh;
+}
+.media .content {
+    flex: 1;
+    padding: 10px;
+    align-items: center;
+}
+
+.image{
+    width: 35vw;
+    height: 75vh;
+}
+/*body{
+    /*background-color: rgb(72, 155, 76);
+
+/*}
