@@ -77,12 +77,10 @@ header .navbar a:hover{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding-right: 20rem;
 }
 
 .inicio .image img{
-	width: 40vw;
-	padding-left: 20rem;
+	width: 35vw;
 }
 
 .inicio .content h3{
