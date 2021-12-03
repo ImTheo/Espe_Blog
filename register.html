@@ -9,40 +9,65 @@
 </head>
 <body>
     
-    <h1>ESPE BLOG</h1>
-    <div class="switch-button">
-        <input type="checkbox">
-        <label>Obscuro/Claro</label>
-    </div>
+    <!-- <div class="switch-button">
+        <input type="checkbox" >
+        <label for="checkbox"></label>
+    </div> -->
         
     <div class="media" >
         <div class="image">
-            <img src="/media/globo.png" alt="" width="100%"  height="100%">
-        </div class="content">
+            <img src="/media/fig1.png" alt="" width="100%"  height="100%" class="img2">
+            <img src="/media/fig2.png" alt="" width="100%"  height="100%" class="img3">
+            <img src="/media/fig3.png" alt="" width="100%"  height="100%" class="img4">
+            <img src="/media/globo.png" alt="" width="100%"  height="100%" class="img1">
+           
+            
+        </div >
+        <div class="content">
             <form id="data-container" class="form">
-                <h2>Create your Free Account</h2>
-                <label>Full Name</label>
+                <h2>Crea tu cuenta totalmente gratis</h2>
+                <label>Nombre completo</label>
                 <input type="text" placeholder="Enter your Full Name here" required></input>
                 <br>
-                <label>Email</label>
+                <label>Correo</label>
                 <input type="email" placeholder="Enter your Email here" required></input>
                 <br>
-                <label>Password</label>
+                <label>Contraseña</label>
                 <input type="password" placeholder="Enter your Password here" required></input>
                 <br>
-                <input type="submit" value="Create Account">
+                <label>Fecha de nacimiento</label>
+                <input type="date" placeholder="Ingresa tu edad aquí  " required></input>
                 <br>
-                <label> <center>Already have a account? <a href="">Log in</a></center></label>
+                <label>Sexo</label>
+                <br>
+                <label for="M">Masculino</label>
+                <input type="radio" name="sex" id="M">
+                <label for="F">Femenino</label>
+                <input type="radio" name="sex" id="F">
+                <label for="P">Prefiero no decirlo</label>
+                <input type="radio" name="sex" id="P">
                 
                 <br>
-                <label><center>- OR -</center></label>
+
+                
+                
+                <input type="submit" value="Create Account">
+                <br>
+
+                
+                <label> <center>Ya tienes cuenta? <a href="">Inicia sesión</a></center></label>
+                
+                <br>
+                <label><center>- O -</center></label>
                 <br>
                 <div>
-                    <center><button>Sing up with Google</button></center>
+                    <center><button>Inicia sesion con Google</button></center>
                 </div>
                 <br>
                 <label>Grupo 11 Proyecto Integrador</label>
             </form>
+        </div>   
     </div>
+    
 </body>
 </html>

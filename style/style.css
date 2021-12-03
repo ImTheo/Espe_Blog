@@ -1,42 +1,49 @@
 body{
-    background-image: url("/media/cielo.jpg");
+    background-color: rgb(212, 219, 226);
     background-size: 100%;
 }
 
 .media {
     display: flex;
     align-items: flex-start;
-    width: 88vw;
-    margin:  auto;
-    background-color: white;
+    width: 90vw;
+    margin: 10vh auto;
+    height: 80vh;
+    background-image: url(/media/cielo.jpg);
     /*border-color: black;*/
-    border-style: solid;
-    border-radius: 4vh;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 .media .content {
     flex: 1;
-    padding: 10px;
+    padding: 0 10px;
     align-items: center;
-    border-color: black;
-    border-style: solid;
-    border-radius: 4vh;
+    /*border-color: black;*/
+    /*border-style: solid;*/
+    /*border-radius: 4vh;*/
+    background-color: white;
 }
 
 .content
 {
     border-color: black;
     border-style: solid;
-    border-radius: 4vh;
-    
+    border-radius: 4vh 0vh 0 4vh;
+    width: 80vw;
+    height: 100%;
+    z-index: 100;
+    margin-left: -5vw;
 }
 
 .image{
-    width: 35vw;
-    height: 75vh;
+    width: 30vw;
+    height: 100vh;
+    padding-top: 2vh;
+    border-radius: 50%;
+    border-color: blue;
 }
 
-.form{
-    margin: auto;   
+form{
+    padding: 0vh 15vw 15vh ;   
     height: 100%;
  }
 
@@ -52,4 +59,61 @@ body{
     background: linear-gradient(to bottom right,rgb(126, 209, 130), rgb(72, 155, 117,.8));
     width:50%;
     margin: 2vh 25%;
+}
+.form input[type=radio]{
+    position: relative;
+    width: 1vw;
+    margin: 0.5rem;
+    padding: 100%;
+}
+
+.img1{
+    z-index: 150;
+    width: 15vw;
+    height: 20em;
+    margin-left: 5%;
+    margin-top: 5%;
+    /*padding: 2rem 0; */  
+    border-style: solid;
+    border-radius: 50% 50%;
+    background-image: url(/media/cielo.jpg);
+    position: absolute;
+}
+
+.img2{
+    position: absolute;
+    z-index: 0;
+    width: 20vw;
+    height: 20em;
+    margin-left: 4%;
+    margin-top: 5%;
+}
+.img3{
+    position: absolute;
+    width: 17vw;
+    height: 20em;
+    margin-left: 9%;
+    margin-top: 2%;
+}
+
+.img4{
+    position: absolute;
+    width: 20vw;
+    height: 15em;
+    margin-top: 15%;
+    margin-left: 2%;
+    
+}
+
+.switch-button{
+    position: fixed;
+    position: absolute;
+    width: 4vw;
+    height: 3vh;
+    left: 1152px;
+    top: 23px;
+    display: flex;
+    background: linear-gradient(96.88deg, #96E9ED 0%, rgba(255, 255, 255, 0) 110.93%);
+    border-radius: 20px;
+    border: solid #000000;
 }
