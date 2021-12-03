@@ -1,7 +1,13 @@
+body{
+    background-image: url("/media/cielo.jpg");
+    background-size: 100%;
+}
+
 .media {
     display: flex;
     align-items: flex-start;
     width: 88vw;
+    margin:  auto;
     background-color: white;
     /*border-color: black;*/
     border-style: solid;
@@ -21,6 +27,7 @@
     border-color: black;
     border-style: solid;
     border-radius: 4vh;
+    
 }
 
 .image{
@@ -28,14 +35,21 @@
     height: 75vh;
 }
 
- .form{
-     margin: auto;
-     
+.form{
+    margin: auto;   
+    height: 100%;
  }
+
 .form input {
     width: 90%;
     height: 30px;
     margin: 0.5rem;
     border-radius: 1vh;
+    background-color: rgb(237, 237, 238);
 }
 
+.form input[type=submit]{
+    background: linear-gradient(to bottom right,rgb(126, 209, 130), rgb(72, 155, 117,.8));
+    width:50%;
+    margin: 2vh 25%;
+}
