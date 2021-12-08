@@ -4,19 +4,23 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Espe Blog</title>
-	<link rel="stylesheet" href="style/homePageStyle.css">
+	<link rel="stylesheet" href="style/styles.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
+
+<header>
+	<a class="logo">
+		<span>ESPE</span>Blog
+	</a>
+	<nav class="navbar">
+		<a href="#inicio">inicio</a>
+		<a href="#detalles">detalles</a>
+		<a href="#">pagina en blanco</a>
+	</nav>
+</header>
+
 <body>
-	<header>
-		<a class="logo">
-			<span>ESPE</span>Blog
-		</a>
-		<nav class="navbar">
-			<a href="#inicio">inicio</a>
-			<a href="profile.html">Perfil de usuario</a>
-			<a href="register.html">Crear usuario</a>
-		</nav>
-	</header>
+	
 	<section class="inicio" id="inicio">
 		<div class="content">
 			<h3>ESPE<span>Blog</span><img src="media/megafono2.png" id="megafono"></h3>
@@ -27,5 +31,71 @@
 			<img src="media/Logo_ESPEOk.png">
 		</div>
 	</section>
+	<section class="detalles" id="detalles">
+		<h1 class="heading">Detalles de la Página</h1>
+		<div class="container-box">
+			<div class="box">
+				<img src="media/personas1.png">
+				<h3>Cooperacion de la comunidad Universitaria</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.</p>
+				<a class="btn">Ver Más</a>
+			</div>
+
+			<div class="box">
+				<img src="media/personas2.png">
+				<h3>Fraternidad y Empatía</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.</p>
+				<a class="btn">Ver Más</a>
+			</div>
+
+		</div>
+	</section>
 </body>
+
+<footer>
+	<div class="container-box">
+		<div class="box">
+			<h3>Copyright</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.</p>
+		</div>
+		<div class="box">
+			<h3>Síguenos en nuestras redes</h3>
+			<a href="#">facebook</a>
+			<a href="#">instagram</a>
+			<a href="#">twitter</a>
+		</div>
+		<div class="box">
+			<h3>Más información</h3>
+
+			<div class="info">
+				<i class="fas fa-phone"></i>
+				<p>123-123-123</p>
+			</div>
+
+			<div class="info">
+				<i class="fas fa-envelope"></i>
+				<p>correoejemplo@gmail.com<br>correoejemplo2@gmail.com</p>
+			</div>
+
+			<div class="info">
+				<i class="fas fa-map-marker-alt"></i>
+				<p>Sangolqui, Ecuador<br>062 123 123</p>
+			</div>
+		</div>
+	</div>
+	<h1 class="credits">
+		&copy, copyright @2021
+	</h1>
+</footer>
+
 </html>
+
