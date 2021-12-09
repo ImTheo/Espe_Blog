@@ -5,69 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style/style.css">
-    <title>Espe Blog</title>
+    <link rel="shortcut icon" href="/media/icono.ico">
+    <title>Registro - Espe Blog</title>
 </head>
 <body>
     
-    <!-- <div class="switch-button">
-        <input type="checkbox" >
-        <label for="checkbox"></label>
-    </div> -->
-        
-    <div class="media" >
-        <div class="image">
-            <img src="/media/fig1.png" alt="" width="100%"  height="100%" class="img2">
-            <img src="/media/fig2.png" alt="" width="100%"  height="100%" class="img3">
-            <img src="/media/fig3.png" alt="" width="100%"  height="100%" class="img4">
-            <img src="/media/globo.png" alt="" width="100%"  height="100%" class="img1">
-           
-            
-        </div >
+    <input type="radio" name="dark-ligth" id="d-mode" checked>
+    <label for="d-mode"><img src="/media/sun.png" id="img"/></label>
+    <input type="radio" name="dark-ligth" id="l-mode">
+    <label for="l-mode"><img src="/media/half-moon.png" id="img"/></label>
+
+    <div class="card">
         <div class="content">
-            <form id="data-container" class="form">
-                <h2>Crea tu cuenta totalmente gratis</h2>
-                <label>Nombre completo</label>
-                <input type="text" placeholder="Enter your Full Name here" required></input>
-                <br>
-                <label>Correo</label>
-                <input type="email" placeholder="Enter your Email here" required></input>
-                <br>
-                <label>Contraseña</label>
-                <input type="password" placeholder="Enter your Password here" required></input>
-                <br>
-                <label>Fecha de nacimiento</label>
-                <input type="date" placeholder="Ingresa tu edad aquí  " required></input>
-                <br>
-                <label>Sexo</label>
-                <br>
-                <label for="M">Masculino</label>
-                <input type="radio" name="sex" id="M">
-                <label for="F">Femenino</label>
-                <input type="radio" name="sex" id="F">
-                <label for="P">Prefiero no decirlo</label>
-                <input type="radio" name="sex" id="P">
-                
-                <br>
 
-                
-                
-                <input type="submit" value="Create Account">
-                <br>
+        <form  id="form">
+            <h2><center>Crea tu cuenta gratis</center></h2>
+            <label class="label">Nombre completo</label>
+            <input type="text" placeholder="Enter your Full Name here" required></input>
+            <br>
+            <label class="label">Correo</label>
+            <input type="email" placeholder="Enter your Email here" required></input>
+            <br>
+            <label class="label">Contraseña</label>
+            <input type="password" placeholder="Enter your Password here" required></input>
+            <br>    
+            <input type="submit" value="Crear Cuenta" class="btn">
+            <br>
+            <label class="label"> <center>Ya tienes cuenta? <a href="">Inicia sesión</a></center></label>
+            <label><center>- O -</center></label>
+            <div>
+                <center><button class="btn-google" id="btn_google">Inicia con Google</button></center>
+            </div>
+        </form>
 
-                
-                <label> <center>Ya tienes cuenta? <a href="">Inicia sesión</a></center></label>
-                
-                <br>
-                <label><center>- O -</center></label>
-                <br>
-                <div>
-                    <center><button>Inicia sesion con Google</button></center>
-                </div>
-                <br>
-                <label>Grupo 11 Proyecto Integrador</label>
-            </form>
-        </div>   
+        
+
     </div>
+    </div>   
     
+    <div id="imge"></div>
 </body>
 </html>
