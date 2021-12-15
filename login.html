@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Login</title>
+    <link href="style/login-style.css" rel="stylesheet">
+</head>
+<body>
+<input checked id="d-mode" name="dark-ligth" type="radio">
+<label for="d-mode"><img id="img" src="media/sun.png"/></label>
+<input id="l-mode" name="dark-ligth" type="radio">
+<label for="l-mode"><img id="img" src="media/half-moon.png"/></label>
+<label for="l-mode"><img id="logo" src="media/Logo_dark.png"/></label>
+
+<div class="container">
+    <div class="boxLog">
+        <h1>Inicia Sesion</h1>
+        <form id="form"></form>
+        <label class="labelUser">Usuario</label>
+        <p><input class="userBox" maxlength="100" name="usuario" type="text"></p>
+        <label class="labelPassword">Contraseña</label>
+        <p><input class="userBox" minlength="50" name="password" type="password"></p>
+        <p>¿No tiene cuenta? <a href="url">Regístrate</a></p>
+    </div>
+
+    <div class="botones">
+        <input class="btn " type="submit" value="Iniciar Sesion">
+            <button class="btn-google " id="btn_google">Inicia con Google</button>
+    </div>
+</div>
+
+
+</body>
+</html>
