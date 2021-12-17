@@ -122,11 +122,11 @@ body {
 }
 
 #l-mode:checked  ~ .container>.boxLog{
-    background: rgba(70, 104, 137, 0.5);
-    backdrop-filter: blur(10px);
-    /* Note: backdrop-filter has minimal browser support */
-    
-    border-radius: 25px;
+background: rgba(70, 104, 137, 0.5);
+backdrop-filter: blur(10px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 25px;
 }
 
 #d-mode:checked + label>#img {
