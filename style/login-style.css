@@ -39,7 +39,7 @@ body {
 
 #logo{
 
-    width: 650px;
+    width: 100vh;
     position: absolute;
     left: 100vh;
     top: 10.5vh;
@@ -50,15 +50,15 @@ body {
     position: absolute;
     left: 35%;
     z-index: 2;
-    left: 75vh;
+    left: 55vh;
     top: 7vh;
 }
 
 .container{
     padding: 3vw;
     color: white;
-    width: 545px;
-    height: 550px;
+    width: 60vh;
+    height: 90vh;
     background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(10px);
     border-radius: 25px;
@@ -68,12 +68,12 @@ body {
 .boxLog {
     position: relative;
     align-items: center;
-    height: 25vw;
+    height: 45vh;
     justify-content: space-between;
-    padding: 0em 0em 5em 0em ;
     display: flex;
     align-items: center;
     flex-direction: column;
+
 }
 
 .userBox {
@@ -86,19 +86,18 @@ body {
 
 
 .botones{
+    padding: 10%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 20vh;
-    margin: 0vh 0vh 0vh 20vh;
+    align-items: center;
+    height: 30vh;
 }
 
 
 .btn{
     width: 206.56px;
     height: 62.48px;
-    left: 253.43px;
-    top: 649.4px;
     background: #008DFF;
     border-radius: 10px;
     font-family: Poppins;
@@ -118,14 +117,12 @@ body {
     height: 49.75px;
     color: white;
     position: relative;
-    left: -1.5vh;
+
 }
 
-#l-mode:checked  ~ .container>.boxLog{
+#l-mode:checked  ~ .container::before {
 background: rgba(70, 104, 137, 0.5);
 backdrop-filter: blur(10px);
-/* Note: backdrop-filter has minimal browser support */
-
 border-radius: 25px;
 }
 
