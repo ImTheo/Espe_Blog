@@ -37,20 +37,17 @@ body {
     
 }
 
-.logo{
-    background-image: url(/media/Logo_claro.png);
-    background-size: 100% 100%;
-    width: 40vw; height: 15vw;
-    background-repeat: no-repeat;
-    margin:0 auto;
+#logo{
+    width: 100vh;
     position: absolute;
-    top: 10vw; right: 10vw;
+    left: 100vh;
+    top: 10.5vh;
 }
 
 #img {
     width: 10vh;
     position: absolute;
-    left: 35vh;
+    left: 35%;
     z-index: 2;
     left: 55vh;
     top: 7vh;
@@ -123,7 +120,7 @@ body {
 }
 
 #l-mode:checked  ~ .container::before {
-background: rgba(11, 12, 12, 0.5);
+background: rgba(70, 104, 137, 0.5);
 backdrop-filter: blur(10px);
 border-radius: 25px;
 transition: 2s;
@@ -148,10 +145,10 @@ transition: 2s;
     background-size: cover;
     top: 0;left: 0;bottom: 0;right: 0;
     z-index: -1;
-
+    opacity: .75;
 }
 
-#l-mode:checked  ~ .logo{
+#l-mode:checked  ~.container+#logo{
     background-image: url("/media/Logo_dark.png") ;
     background-repeat: no-repeat;
     background-size: 100%;
