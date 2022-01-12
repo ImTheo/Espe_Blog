@@ -5,97 +5,126 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Espe Blog</title>
 	<link rel="stylesheet" href="style/homePageStyle.css">
+	<script defer src="main.js"></script>
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
-
-<header>
-	<a class="logo">
-		<span>ESPE</span>Blog
-	</a>
-	<nav class="navbar">
-		<a href="#inicio">inicio</a>
-		<a href="#detalles">detalles</a>
-		<a href="/register.html">pagina en blanco</a>
-	</nav>
-</header>
-
 <body>
-	
-	<section class="inicio" id="inicio">
+	<header>
+		<nav class="navbar">
+			<a href="#inicio">incio</a>
+			<a href="#detalles">noticias</a>
+		</nav>
+		<div class="profile">
+			<img src="/media/profile.png">
+		</div>
+		<nav class="navbar">
+			<a href="#">comunidad</a>
+			<a href="#">blog</a>
+		</nav>
+		<label>
+			<input type="checkbox">
+			<span class="check"></span>
+		</label>
+	</header>
+	<div class="inicio">
 		<div class="content">
-			<h3>ESPE<span>Blog</span><img src="media/megafono2.png" id="megafono"></h3>
-			<p>Tu fuente de información</p>
+			<img src="/media/Logo_dark.png" id="logo-l"><br>
 			<a href="#" class="btn">Saber más</a>
-		</div>
-		<div class="image">
-			<img src="media/Logo_ESPEOk.png">
-		</div>
-	</section>
-	<section class="detalles" id="detalles">
-		<h1 class="heading">Detalles de la Página</h1>
-		<div class="container-box">
-			<div class="box">
-				<img src="media/personas1.png">
-				<h3>Cooperacion de la comunidad Universitaria</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat.</p>
-				<a class="btn">Ver Más</a>
-			</div>
-
-			<div class="box">
-				<img src="media/personas2.png">
-				<h3>Fraternidad y Empatía</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat.</p>
-				<a class="btn">Ver Más</a>
-			</div>
-
-		</div>
-	</section>
-</body>
-
-<footer>
-	<div class="container-box">
-		<div class="box">
-			<h3>Copyright</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat.</p>
-		</div>
-		<div class="box">
-			<h3>Síguenos en nuestras redes</h3>
-			<a href="#">facebook</a>
-			<a href="#">instagram</a>
-			<a href="#">twitter</a>
-		</div>
-		<div class="box">
-			<h3>Más información</h3>
-
-			<div class="info">
-				<i class="fas fa-phone"></i>
-				<p>123-123-123</p>
-			</div>
-
-			<div class="info">
-				<i class="fas fa-envelope"></i>
-				<p>correoejemplo@gmail.com<br>correoejemplo2@gmail.com</p>
-			</div>
-
-			<div class="info">
-				<i class="fas fa-map-marker-alt"></i>
-				<p>Sangolqui, Ecuador<br>062 123 123</p>
-			</div>
+			<a href="#" class="btn">Regístrate</a>
 		</div>
 	</div>
-	<h1 class="credits">
-		&copy, copyright @2021
-	</h1>
-</footer>
+	<section class="detalles" id="detalles">
+		<div class="carousel">
+			<h2>conoce las últimas noticias y novedades</h2>
+			<div class="slick-list" id="slick-list">
+				<button class="slick-arrow slick-prev" id="button-prev">
+					<i class="fas fa-chevron-left"></i>
+				</button>
+				<div class="slick-track" id="track">
+					<div class="slick">
+						<div>
+							<a href="/">
+								<h4><small>conoce más</small>aquí</h4>
+								<picture>
+									<img src="/media/Carousel_1.png" alt="Image">
+								</picture>
+							</a>
+						</div>
+					</div>
+					<div class="slick">
+						<div>
+							<a href="/">
+								<h4><small>conoce</small>más</h4>
+								<picture>
+									<img src="/media/Carousel_2.png" alt="Image">
+								</picture>
+							</a>
+						</div>
+					</div>
+					<div class="slick">
+						<div>
+							<a href="/">
+								<h4><small>conoce</small>más</h4>
+								<picture>
+										<img src="/media/Carousel_3.png" alt="Image">
+								</picture>
+							</a>
+						</div>
+					</div>
+					<div class="slick">
+						<div>
+							<a href="/">
+								<h4><small>conoce</small>más</h4>
+								<picture>
+									<img src="/media/Carousel_4.png" alt="Image">
+								</picture>
+							</a>
+						</div>
+					</div>
+				</div>
+				<button class="slick-arrow slick-next" id="button-next">
+					<i class="fas fa-chevron-right"></i>
+				</button>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container-box">
+			<div class="box">
+				<h3>Copyright</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.</p>
+			</div>
+			<div class="box">
+				<h3>Síguenos en nuestras redes</h3>
+				<a href="#">facebook</a>
+				<a href="#">instagram</a>
+				<a href="#">twitter</a>
+			</div>
+			<div class="box">
+				<h3>Más información</h3>
 
+				<div class="info">
+					<i class="fas fa-phone"></i>
+					<p>123-123-123</p>
+				</div>
+
+				<div class="info">
+					<i class="fas fa-envelope"></i>
+					<p>correoejemplo@gmail.com<br>correoejemplo2@gmail.com</p>
+				</div>
+
+				<div class="info">
+					<i class="fas fa-map-marker-alt"></i>
+					<p>Sangolqui, Ecuador<br>062 123 123</p>
+				</div>
+			</div>
+		</div>
+		<h1 class="credits">
+			&copy, copyright @2021
+		</h1>
+	</footer>
+</body>
 </html>
-
