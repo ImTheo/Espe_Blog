@@ -1,7 +1,10 @@
 import React, {useState} from "react";
+
 import HomepageHeader from "../Homepage/HomepageHeader";
 import HomepageFooter from "../Homepage/HomepageFooter";
 import Posts from "./Posts";
+import imageBackground from "../../utils/images/Portada_inicio.jpeg"
+import userLogo from "../../utils/logos/pngwing.com.png"
 
 function EditUser(props) {
     var aux = document.getElementsByClassName('editContainer');
@@ -22,10 +25,10 @@ function User() {
     return (
         <div>
             <HomepageHeader />
-            <img id='img-bkg' src={''} alt='' />
+            <img id='img-bkg' src={imageBackground} alt='' />
             <div id='user-container'>
                 <div id='user-data'>
-                    <img id='user-img' src={''} alt='' />
+                    <img id='user-img' src={userLogo} alt='' />
                     <label className='user-lbl'>Nombre de usuario</label>
                     <label className='user-lbl'>usuario@espe.edu.ec</label>
                     <button onClick={() => setShow('')}>Editar Perfil</button>

@@ -3,3 +3,279 @@
   margin: 0;
 }
 
+:root {
+  --azul: #394a6d;
+
+  --primario-l: #2175ad;
+  --secundario-l: #82c885;
+  --terceario: #31a8f7;
+  --cuaternario-l: #8f6ded;
+  --background-l: #ebebeb;
+
+  --text: #7c838a;
+
+  --primario-d: #008dff;
+  --secundario-d: #8df091;
+  --cuaternario-d: #6c3bf4;
+  --background-d: rgba(0, 0, 0, 0.75);
+
+  --degradado: linear-gradient(90deg, var(--primario-l), var(--secundario-l));
+}
+
+body{
+  background: var(--background-l);
+}
+
+header,
+footer {
+  background: var(--azul);
+}
+
+#nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.nav__link {
+  margin: 1vh 3vw 1vh 3vw;
+}
+
+a {
+  color: var(--background-l);
+  text-decoration: none;
+}
+
+.nav__logo {
+  width: 5vh;
+  height: 5vh;
+}
+
+#darkmode-btn{
+	position: absolute;
+	display: flex;
+  top: 2.5vh;
+	right: 4vh;
+}
+
+header label input[type="checkbox"]{
+	-webkit-appearance: none;
+	visibility: hidden;
+	display: none;
+}
+
+#darkmode__check{
+	position: relative;
+	display: block;
+	width: 5vh;
+	height: 2.5vh;
+	background: var(--background-l);
+	cursor: pointer;
+	border-radius: 20px;
+	overflow: hidden;
+	transition: ease-in 0.5s;
+}
+
+header label input[type="checkbox"]:checked ~ .check{
+	background: var(--background-l);
+}
+
+#darkmode__check::before{
+	content: '';
+	position: absolute;
+	top: 0.25vh;
+	left: 0.45vh;
+	background: var(--azul);
+	width: 2vh;
+	height: 2vh;
+	border-radius: 50%;
+	transition: 0.5s;
+}
+
+#darkmode__in[type="checkbox"]:checked ~ #darkmode__check::before{
+	transform: translateX(2vh);
+}
+
+#darkmode__in[type="checkbox"]:checked ~ #darkmode__check::after{
+	transform: translateX(0vh);
+}
+
+#presentation{
+  position: relative;
+}
+
+#presentation-img{
+  width: 100%;
+  height: 100%;
+}
+
+#presentation__item{
+  width: 30vh;
+  position: absolute;
+  top: 30vh;
+  left: 15vw;
+}
+
+#news-title {
+  margin: 5vh 0vw 2vh 0vw;
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--text);
+}
+
+#news-container {
+  width: 100%;
+  margin: 0%;
+  position: relative;
+}
+
+#news {
+  margin: 2vh 0vw 5vh 0vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.new {
+  width: 26vw;
+  height: 37vh;
+  margin: 1vh 0.5vw 1vh 0.5vw;
+}
+
+.news__btn{
+  width: 4vh;
+  height: 4vh;
+  border-radius: 50%;
+  border: none;
+}
+
+.new__img {
+  width: 26vw;
+  height: 37vh;
+}
+
+#information-container {
+  display: flex;
+  justify-content: center;
+}
+
+#copyright,
+#social-networks,
+#more-information {
+  width: 31vw;
+  margin: 3vh 1vw 3vh 1vw;
+}
+
+#copyright__title,
+#more-information__title,
+#social-networks__title {
+  margin-bottom: 1vh;
+  font-size: 1.5rem;
+}
+
+#copyright__title,
+#more-information__title,
+#social-networks__title,
+#copyright__p,
+.social-networks__lbl,
+#more-information__lbl,
+.more-information__p {
+  color: var(--secundario-l);
+}
+
+p{
+  line-height: 3vh;
+}
+
+#copyright-p{
+  padding: 3vh 0vw 3vh 0vw;
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--background-l);
+}
+
+/* estilos del usuario */
+#img-bkg {
+  width: 100%;
+  height: 30vh;
+}
+
+#user-img {
+  width: 15vw;
+  height: 15vw;
+  border: 1px solid #000000;
+  border-radius: 50%;
+}
+
+.publication-img {
+  width: 10vw;
+  height: 15vh;
+}
+
+#user-data {
+  width: 100%;
+  margin: -15vh 0vh 0vh 0vh;
+  text-align: center;
+  grid-area: item1;
+}
+
+#user-activity {
+  width: 100%;
+  margin: auto;
+  margin-top: 0%;
+  text-align: center;
+  grid-area: item2;
+}
+
+#user-container {
+  width: 80vw;
+  height: 60vh;
+  margin: auto;
+  display: grid;
+  grid-template-areas: "item1 item2";
+  grid-template-columns: 1fr 2fr;
+}
+
+.publication {
+  width: 19%;
+  height: 30vh;
+  margin: 0vh 3% 0vh 3%;
+  border: 1px solid #000000;
+  border-radius: 10%;
+  background-color: #ffffff;
+}
+
+.boardPublication {
+  width: 100%;
+  display: flex;
+}
+
+.publication-img {
+  width: 100%;
+  position: relative;
+}
+
+.user-lbl,
+.user-h3,
+.publication-h3,
+.publication-description {
+  margin: 2vh 0vw 2vh 0vw;
+  display: block;
+}
+
+.user-btn {
+  margin: 2vh 0vw 2vh 0vw;
+}
+
+.editContainer{
+  width: 20vw;
+  height: 20vh;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  border: 1px solid #000000;
+}

@@ -6,16 +6,16 @@ function HomepageHeader() {
     return (
         <header>
             <nav>
-                <ul>
+                <ul id='nav-list'>
                     <li className='nav__link'>
                         <Link to="/">Inicio</Link>
                     </li>
                     <li className='nav__link'>
-                        <Link to="/">Noticias</Link>
+                        <a href='#news-container'>Noticias</a>
                     </li>
                     <li className='nav__link'>
                         <Link to="/user">
-                        <img className='nav__logo__img' src={profileLogo} alt='/' />
+                        <img className='nav__logo' src={profileLogo} alt='/' />
                         </Link>
                     </li>
                     <li className='nav__link'>
@@ -26,7 +26,10 @@ function HomepageHeader() {
                     </li>
                 </ul>
             </nav>
-            <img className='nav__img' src={"/"} alt='/' />
+            <label id='darkmode-btn'>
+                <input id='darkmode__in' type="checkbox"></input>
+                <span id='darkmode__check'></span>
+            </label>
         </header>
     );
 }
