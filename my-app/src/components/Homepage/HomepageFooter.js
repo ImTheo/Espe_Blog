@@ -13,9 +13,11 @@ function SocialNetworks(){
     return (
         <div id='social-networks'>
             <h3 id='social-networks__title'>Síguenos En Nuestras Redes</h3>
-            <label className='social-networks__lbl'>Facebook</label>
-            <label className='social-networks__lbl'>Instagram</label>
-            <label className='social-networks__lbl'>Twitter</label>
+            <div id='social-networks__items'>
+                <a className='social-networks__lbl' href='https://www.facebook.com/'>Facebook</a>
+                <a className='social-networks__lbl' href='https://www.Instagram.com/'>Instagram</a>
+                <a className='social-networks__lbl' href='https://www.Twitter.com/'>Twitter</a>
+            </div>
         </div>
     );
 }
@@ -24,17 +26,19 @@ function MoreInformation(){
     return (
         <div id='more-information'>
             <h3 id='more-information__title'>Más Información</h3>
-            <div>
-                <img className='more-information__img' src={'/'} alt='/'></img>
-                <label id='more-information__lbl'>123-123-123</label>
-            </div>
-            <div>
-                <img className='more-information__img' src={'/'} alt='/'></img>
-                <p className='more-information__p'>Correoejemplo@Gmail.com<br/>Correoejemplo2@Gmail.com</p>
-            </div>
-            <div>
-                <img className='more-information__img' src={'/'} alt='/'></img>
-                <p className='more-information__p'>Sangolqui, Ecuador<br/>062 123 123</p>
+            <div id='more-information__items'>
+                <div>
+                    {/* <img className='more-information__img' src={'/'} alt='/'></img> */}
+                    <label id='more-information__lbl'>123-123-123</label>
+                </div>
+                <div>
+                    {/* <img className='more-information__img' src={'/'} alt='/'></img> */}
+                    <p className='more-information__p'>Correoejemplo@Gmail.com<br/>Correoejemplo2@Gmail.com</p>
+                </div>
+                <div>
+                    {/* <img className='more-information__img' src={'/'} alt='/'></img> */}
+                    <p className='more-information__p'>Sangolqui, Ecuador<br/>062 123 123</p>
+                </div>
             </div>
         </div>
     );

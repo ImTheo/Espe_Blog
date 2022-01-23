@@ -9,8 +9,8 @@ function Presentation(){
             <img id="presentation-img" src={bodyBackground} alt=""></img>
             <div id="presentation__item">
                 <img id="presentation-logo" src={logo} alt=""></img>
-                <button>Saber Más</button>
-                <button>Regístrarse</button>
+                <a className="presentation__link" href="/">Saber Más</a>
+                <a className="presentation__link" href="/">Regístrarse</a>
             </div>
         </div>
     );
