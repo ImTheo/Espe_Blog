@@ -1,7 +1,7 @@
 import React from "react";
-import sun from '../../src/loginAssets/sun.svg'
-import moon from '../loginAssets/half-moon.png'
-import "./Login.css"
+import sun from '../../utils/images/loginAssets/sun.svg'
+import moon from '../../utils/images/loginAssets/half-moon.png'
+import "../../styles/Login.css"
 
 const Login = () => {
   return (
