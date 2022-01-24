@@ -321,6 +321,10 @@ p{
   border: 1px solid #000000;
 }
 
+.blog__container, .comunity__container{
+  height: 70vh;
+}
+
 @media screen and (max-width: 800px) {
   #user__container{
     grid-template-areas: "item1" 

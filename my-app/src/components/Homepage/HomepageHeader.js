@@ -19,10 +19,10 @@ function HomepageHeader() {
                         </Link>
                     </li>
                     <li className='nav__link'>
-                        <Link to="/">Comunidad</Link>
+                        <Link to="/comunity">Comunidad</Link>
                     </li>
                     <li className='nav__link'>
-                        <Link to="/">Blog</Link>
+                        <Link to="/blog">Blog</Link>
                     </li>
                 </ul>
             </nav>
