@@ -2,6 +2,7 @@ import React from 'react';
 import '../../styles/register.css'
 import halfmoon from '../../utils/logos/half-moon.png'
 import sun from '../../utils/logos/sun.png'
+import { Link } from 'react-router-dom'
 
 
 function Register()
@@ -31,7 +32,7 @@ function Register()
             <br></br>   
             <input type="submit" value="Crear Cuenta" class="btn"></input>
             <br></br>
-            <label class="label"> <center>Ya tienes cuenta? <a href="login.html">Inicia sesión</a></center></label>
+            <label class="label"> <center>Ya tienes cuenta? <Link to="/login">Inicia sesión</Link></center></label>
             <label><center>- O -</center></label>
             <div>
                 <center><button class="btn-google" id="btn_google">Inicia con Google</button></center>
