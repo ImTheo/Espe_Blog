@@ -10,8 +10,8 @@ function Register()
     <div>
         <body>
     
-    <input type="radio" name="dark-ligth" id="d-mode" checked>
-    </input>/<label for="d-mode"><img src={sun} id="img"/></label>
+    <input type="radio" name="dark-ligth" id="d-mode" checked></input>
+    <label for="d-mode"><img src={sun} id="img"/></label>
     <input type="radio" name="dark-ligth" id="l-mode"></input>
     <label for="l-mode"><img src={halfmoon} id="img"/></label>
 
