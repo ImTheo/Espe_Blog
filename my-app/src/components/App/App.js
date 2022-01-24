@@ -1,9 +1,10 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
+
 import Homepage from '../Homepage/Homepage';
 import User from '../User/User';
+import Login from '../Login/Login';
 import '../../styles/index.css';
-import Login from '../Login/Login'
 
 
 function App (){
@@ -12,7 +13,6 @@ function App (){
                 <Route path="/" element={<Homepage />} />
                 <Route path="/user" element={<User />} />
                 <Route path="/login" element={<Login />} />
-
             </Routes>
     );
 }
