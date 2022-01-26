@@ -3,11 +3,16 @@ import { Routes, Route } from 'react-router-dom';
 
 import Homepage from '../Homepage/Homepage';
 import User from '../User/User';
+<<<<<<< Updated upstream
 import Login from '../Login/Login';
 import Register from '../Register/Register';
 import Comunity from '../Comunity/Comunity';
 import Blog from '../Blog/Blog';
 
+=======
+import Register from '../Register/Register'
+import Login from '../Login/LoginS'
+>>>>>>> Stashed changes
 import '../../styles/index.css';
 
 
